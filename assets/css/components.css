@@ -1,21 +1,9 @@
 /* ------------------------------------------------------------------------------
  *
- *  # Components
- *
- *  Common less file with imports of plugins and pages
+ *  # Creator: MH RONY
  *
  *  Version: 1.0
- *  Latest update: Sep 1st, 2015
- *
- * ---------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------
- *
- *  # Sidebar layouts
- *
- *  Styles for sidebar components, main navigation and sidebar itself
- *
- *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .sidebar {
@@ -67,7 +55,6 @@
 .sidebar-content {
   position: relative;
 }
-
 
 .sidebar-all-hidden .sidebar-main,
 .sidebar-all-hidden .sidebar-secondary,
@@ -877,7 +864,7 @@
 *  Styles for main structure of content area
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .page-container {
@@ -928,7 +915,7 @@
 *  Styles for main structure of content area in boxed layout
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .layout-boxed {
@@ -973,7 +960,7 @@
 *  Main footer styles, currently 1 version only
 *
 *  Version: 1.0
-*  Latest update: May 22, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .footer {
@@ -997,7 +984,7 @@
 *  Additional animations, transitions, transforms and other utilities
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .rotate-45 {
@@ -12380,12 +12367,12 @@ a.plupload_disabled:focus {
 .dataTable thead .sorting:before {
   content: "\e9c1";
   margin-top: -2px;
-  color: #999999;
+  color: #fff;
 }
 .dataTable thead .sorting:after {
   content: "\e9c2";
   margin-top: -10px;
-  color: #999999;
+  color: #fff;
 }
 .dataTable thead .sorting_asc:after {
   content: "\e9c2";
@@ -12755,12 +12742,7 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Columns reorder
-*
-*  Easily modify the column order of a table through drop-and-drag of column headers
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
+
 *
 * ---------------------------------------------------------------------------- */
 .DTCR_clonedTable {
@@ -12779,12 +12761,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Fixed columns
-*
-*  Extension that "freezes" in place the left most columns in a scrolling DataTable
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
 *
 * ---------------------------------------------------------------------------- */
 .DTFC_Cloned {
@@ -12820,12 +12796,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Columns visibility
-*
-*  Extensions allows the end user to enable or disable table column visibility
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
 *
 * ---------------------------------------------------------------------------- */
 .ColVis {
@@ -12909,13 +12879,7 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Fancybox lightbox
-*
-*  Add a toolbar to a table to provide options for saving files (CSV, XLS, PDF),
-*  copying to system Clipboard, or printing the table
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
+
 *
 * ---------------------------------------------------------------------------- */
 .DTTT_container {
@@ -12966,12 +12930,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Datatables Scroller
-*
-*  Drawing the rows required for the current display only, for fast operation
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
 *
 * ---------------------------------------------------------------------------- */
 .DTS tbody th,
@@ -13001,13 +12959,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Responsive extension
-*
-*  Optimise the table's layout for different screen sizes through the dynamic 
-*  insertion and removal of columns from the table
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
 *
 * ---------------------------------------------------------------------------- */
 .dtr-inline.collapsed tbody tr td:before,
@@ -13096,12 +13047,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
  *
- *  # Google maps base
- *
- *  Styles related to Google Maps: containers, sizing etc.
- *
- *  Version: 1.0
- *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
 .map-wrapper {
@@ -13114,12 +13059,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
  *
- *  # Google Maps overrides
- *
- *  Override Google Maps default styles
- *
- *  Version: 1.0
- *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
 .map-container {
@@ -13134,12 +13073,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
  *
- *  # Vector maps
- *
- *  Vector map container, tooltip and zooming
- *
- *  Version: 1.0
- *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
 .vector-map-container {
@@ -13179,12 +13112,6 @@ a.plupload_disabled:focus {
 }
 /* ------------------------------------------------------------------------------
 *
-*  # Chart styling
-*
-*  Charts base - container and sizing setup
-*
-*  Version: 1.0
-*  Latest update: May 25, 2015
 *
 * ---------------------------------------------------------------------------- */
 .chart-container {
@@ -13226,7 +13153,7 @@ a.plupload_disabled:focus {
 *  Styles for C3.js visualization library
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .c3 svg {
@@ -13385,7 +13312,7 @@ a.plupload_disabled:focus {
 *  Basic styles for D3.js visualization library
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .d3-axis path {
@@ -13624,7 +13551,7 @@ a.plupload_disabled:focus {
  *  Generate sparklines (small inline charts) directly in the browser
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .jqsfield {
@@ -13649,7 +13576,7 @@ a.plupload_disabled:focus {
  *  Styles related to task manager - detailed task, list and grid
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ * Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .timer-weekdays {
@@ -13741,7 +13668,7 @@ a.plupload_disabled:focus {
  *  General styles for invoice, mainly responsive setup
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 @media (min-width: 769px) {
@@ -13770,7 +13697,7 @@ a.plupload_disabled:focus {
  *  Styles for user lists - layouts, contact details etc.
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .contact-details {
@@ -13802,7 +13729,7 @@ a.plupload_disabled:focus {
  *  Styles for all user profile layouts
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .profile-cover {
@@ -13874,7 +13801,7 @@ a.plupload_disabled:focus {
  *  Styles related to user login - logins, registration, password revovery, unlock etc.
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .login-container {
@@ -13920,7 +13847,7 @@ a.plupload_disabled:focus {
  *  Styles for timeline in 3 layouts: left, right and centered
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .timeline {
@@ -14354,7 +14281,7 @@ a.plupload_disabled:focus {
  *  Styles for search results and input
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .panel .main-search input[type="text"] {
@@ -14396,7 +14323,7 @@ a.plupload_disabled:focus {
  *  Styles for error and offline pages
  *
  *  Version: 1.0
- *  Latest update: May 25, 2015
+ *  Latest update: July 27 2022
  *
  * ---------------------------------------------------------------------------- */
 .error-title {
@@ -14433,7 +14360,7 @@ a.plupload_disabled:focus {
 *  Display default and custom components in page header and panel heading
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .heading-elements-toggle,
@@ -14790,7 +14717,7 @@ a.plupload_disabled:focus {
 *  Custom helper classes
 *
 *  Version: 1.0
-*  Latest update: May 25, 2015
+*  Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .no-edge-top {
@@ -15165,8 +15092,7 @@ label.display-block {
 *
 *  Custom snippets set
 *
-*  Version: 1.0
-*  Latest update: May 25, 2015
+Latest update: July 27 2022
 *
 * ---------------------------------------------------------------------------- */
 .progress-list {
