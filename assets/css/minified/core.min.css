@@ -4758,9 +4758,9 @@ a.thumbnail.active {
 }
 .thumb img:not(.media-preview) {
   display: inline-block;
-  width: 100%;
+  width: 350px;
   max-width: 100%;
-  height: auto;
+  height: 400px;
 }
 .thumb:hover .caption-zoom {
   border-radius: 0;
