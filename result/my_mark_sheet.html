@@ -7,6 +7,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Ghasful Admin Panel || MH RONY</title>
 
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
+        rel="stylesheet"
+        type="text/css"
+      />
+
       <!-- Global stylesheets -->
       <link
         href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900"
@@ -74,6 +80,89 @@
         src="../assets/js/plugins/loaders/blockui.min.js"
       ></script>
       <!-- /core JS files -->
+
+      <!-- Theme JS files -->
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/visualization/d3/d3.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/visualization/d3/d3_tooltip.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/styling/switchery.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/styling/uniform.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/selects/bootstrap_multiselect.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/ui/moment/moment.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/pickers/daterangepicker.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/ui/nicescroll.min.js"
+      ></script>
+      <script type="text/javascript" src="../assets/js/core/app.js"></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/dashboard.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/dashboard.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/layout_fixed_custom.js"
+      ></script>
+      <!-- /theme JS files -->
+
+      <!-- Core JS files -->
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/loaders/pace.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/core/libraries/jquery.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/core/libraries/bootstrap.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/loaders/blockui.min.js"
+      ></script>
+      <!-- /core JS files -->
+
+      <!-- Theme JS files -->
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/tables/datatables/datatables.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/selects/select2.min.js"
+      ></script>
+
+      <script type="text/javascript" src="../assets/js/core/app.js"></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/datatables_basic.js"
+      ></script>
 
       <!-- Theme JS files -->
       <script
@@ -583,7 +672,170 @@
             <!-- Content area -->
             <div class="content">
               <!-- Dashboard content -->
+              <div class="panel-body">
+                <div class="tabbable">
+                  <ul
+                    class="nav nav-lg nav-tabs nav-tabs-solid nav-tabs-component nav-justified"
+                  >
+                    <li class="active">
+                      <a href="#fast_exam" data-toggle="tab"> Fast Exam</a>
+                    </li>
+                    <li>
+                      <a href="#scend_exam" data-toggle="tab"> Scend Exam</a>
+                    </li>
+                    <li>
+                      <a href="#final_exam" data-toggle="tab">
+                        Final Exam
+                        <span class="label label-danger position-left"
+                          >New</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
 
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="fast_exam">
+                      <table
+                        class="table datatable-basic table-bordered table-striped table-hover"
+                      >
+                        <thead
+                          style="background: #576f88; color: rgb(255, 255, 255)"
+                        >
+                          <tr style="width: 100%">
+                            <th class="text-center" style="width: 5%">SN</th>
+                            <th class="text-center" style="width: 20%">
+                              Bangla
+                            </th>
+                            <th class="text-center" style="width: 20%">
+                              English
+                            </th>
+                            <th class="text-center" style="width: 15%">Math</th>
+                            <th class="text-center" style="width: 15%">
+                              Total Mark
+                            </th>
+                            <th class="text-center" style="width: 10%">
+                              GPA / CGPA
+                            </th>
+                            <th class="text-center" style="width: 10%">
+                              Position
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">01</td>
+                            <td>MH RONY</td>
+                            <td>Md . ABC</td>
+                            <td class="text-center">22 Jun 1972</td>
+                            <td class="text-center">349</td>
+                            <td class="text-center">4.13</td>
+                            <td class="text-center">01</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">02</td>
+                            <td>MH RANA</td>
+                            <td>Md . DEF</td>
+                            <td class="text-center">12 Feb 1971</td>
+                            <td class="text-center">449</td>
+                            <td class="text-center">2.53</td>
+                            <td class="text-center">02</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="tab-pane" id="scend_exam">
+                      <table
+                        class="table datatable-basic table-bordered table-striped table-hover"
+                      >
+                        <thead
+                          style="background: #1395ff; color: rgb(255, 255, 255)"
+                        >
+                          <tr style="width: 100%">
+                            <th style="width: 5%; align-items: center">Roll</th>
+                            <th style="width: 20%">Student Name</th>
+                            <th style="width: 20%">Father Name</th>
+                            <th class="text-center" style="width: 15%">DOB</th>
+                            <th class="text-center" style="width: 15%">
+                              Total Mark
+                            </th>
+                            <th class="text-center" style="width: 10%">GPA</th>
+                            <th class="text-center" style="width: 10%">
+                              Position
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">01</td>
+                            <td>MH Rohim</td>
+                            <td>Md . ABC</td>
+                            <td class="text-center">22 Jun 1972</td>
+                            <td class="text-center">493</td>
+                            <td class="text-center">5.00</td>
+                            <td class="text-center">01</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">02</td>
+                            <td>Md. Emon</td>
+                            <td>Md . DEF</td>
+                            <td class="text-center">12 Aug 1971</td>
+                            <td class="text-center">749</td>
+                            <td class="text-center">5.00</td>
+                            <td class="text-center">02</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="tab-pane" id="final_exam">
+                      <table
+                        class="table datatable-basic table-bordered table-striped table-hover"
+                      >
+                        <thead
+                          style="background: #2faf5e; color: rgb(255, 255, 255)"
+                        >
+                          <tr style="width: 100%">
+                            <th style="width: 5%; align-items: center">Roll</th>
+                            <th style="width: 20%">Student Name</th>
+                            <th style="width: 20%">Father Name</th>
+                            <th class="text-center" style="width: 15%">DOB</th>
+                            <th class="text-center" style="width: 15%">
+                              Total Mark
+                            </th>
+                            <th class="text-center" style="width: 10%">
+                              GPA / CGPA
+                            </th>
+                            <th class="text-center" style="width: 10%">
+                              Position
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="text-center">01</td>
+                            <td>MH RONY</td>
+                            <td>Md . ABC</td>
+                            <td class="text-center">22 Jun 1972</td>
+                            <td class="text-center">349</td>
+                            <td class="text-center">4.13</td>
+                            <td class="text-center">01</td>
+                          </tr>
+                          <tr>
+                            <td class="text-center">02</td>
+                            <td>MH RANA</td>
+                            <td>Md . DEF</td>
+                            <td class="text-center">12 Feb 1971</td>
+                            <td class="text-center">449</td>
+                            <td class="text-center">2.53</td>
+                            <td class="text-center">02</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!-- /dashboard content -->
 
               <!-- Footer -->
