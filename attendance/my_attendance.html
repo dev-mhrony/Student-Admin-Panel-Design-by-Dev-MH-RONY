@@ -38,6 +38,8 @@
         rel="stylesheet"
         type="text/css"
       />
+
+      <link rel="stylesheet" href="../assets/css/academic/attendance.css" />
       <!-- /global stylesheets -->
 
       <!-- Fontwosame CDN -->
@@ -120,6 +122,21 @@
       <script
         type="text/javascript"
         src="../assets/js/pages/layout_fixed_custom.js"
+      ></script>
+
+      <script
+        type="text/javascript"
+        src="../assets/js/core/libraries/jquery_ui/core.min.js"
+      ></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/plugins/forms/selects/selectboxit.min.js"
+      ></script>
+
+      <script type="text/javascript" src="../assets/js/core/app.js"></script>
+      <script
+        type="text/javascript"
+        src="../assets/js/pages/form_selectbox.js"
       ></script>
       <!-- /theme JS files -->
     </head>
@@ -584,8 +601,666 @@
             <!-- Content area -->
             <div class="content">
               <!-- Dashboard content -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Select Date</label>
+                    <select class="selectbox input_box_design">
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                      <option value="03">03</option>
+                      <option value="04">04</option>
+                      <option value="05">05</option>
+                      <option value="06">06</option>
+                      <option value="07">07</option>
+                      <option value="08">08</option>
+                      <option value="09">09</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                      <option value="16">16</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                      <option value="30">30</option>
+                      <option value="31">31</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Select Month</label>
+                    <select class="selectbox input_box_design">
+                      <option value="01">January</option>
+                      <option value="02">February</option>
+                      <option value="03">March</option>
+                      <option value="04">April</option>
+                      <option value="05">May</option>
+                      <option value="06">June</option>
+                      <option value="07">July</option>
+                      <option value="08">August</option>
+                      <option value="09">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label>Select Year</label>
+                    <select class="selectbox input_box_design">
+                      <option value="2019">2019</option>
+                      <option value="2020">2020</option>
+                      <option value="2021">2021</option>
+                      <option value="2022">2022</option>
+                      <option value="2023">2023</option>
+                      <option value="2024">2024</option>
+                      <option value="2025">2025</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
               <!-- /dashboard content -->
+
+              <!-- Bordered striped table -->
+              <div class="panel panel-flat">
+                <div class="panel-heading">
+                  <h5 class="panel-title">Your Attendance Table</h5>
+                  <div class="heading-elements">
+                    <ul class="icons-list">
+                      <li><a data-action="reload"></a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="panel-body"></div>
+
+                <div class="table-responsive pre-scrollable">
+                  <table class="table table-bordered table-striped">
+                    <thead>
+                      <tr style="width: 100%; background: #f3f3fddb">
+                        <th
+                          style="
+                            width: 20%;
+                            text-align: center;
+                            background: #403dc0db;
+                            color: white;
+                          "
+                        >
+                          Month
+                        </th>
+                        <th style="width: 2%">01</th>
+                        <th style="width: 2%">02</th>
+                        <th style="width: 2%">03</th>
+                        <th style="width: 2%">04</th>
+                        <th style="width: 2%">05</th>
+                        <th style="width: 2%">06</th>
+                        <th style="width: 2%">07</th>
+                        <th style="width: 2%">08</th>
+                        <th style="width: 2%">09</th>
+                        <th style="width: 2%">10</th>
+                        <th style="width: 2%">11</th>
+                        <th style="width: 2%">12</th>
+                        <th style="width: 2%">13</th>
+                        <th style="width: 2%">14</th>
+                        <th style="width: 2%">15</th>
+                        <th style="width: 2%">16</th>
+                        <th style="width: 2%">17</th>
+                        <th style="width: 2%">18</th>
+                        <th style="width: 2%">19</th>
+                        <th style="width: 2%">20</th>
+                        <th style="width: 2%">21</th>
+                        <th style="width: 2%">22</th>
+                        <th style="width: 2%">23</th>
+                        <th style="width: 2%">24</th>
+                        <th style="width: 2%">25</th>
+                        <th style="width: 2%">26</th>
+                        <th style="width: 2%">27</th>
+                        <th style="width: 2%">28</th>
+                        <th style="width: 2%">29</th>
+                        <th style="width: 2%">30</th>
+                        <th style="width: 2%">31</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          January
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Febroary
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          March
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          April
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          May
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          June
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          July
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Augost
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Septembor
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Octobor
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Novembor
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                      <tr>
+                        <th
+                          style="
+                            width: 20%;
+                            background: #01002ddb;
+                            color: white;
+                            text-align: center;
+                          "
+                        >
+                          Decembor
+                        </th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">P</th>
+                        <th style="width: 2%">A</th>
+                        <th style="width: 2%">A</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- /bordered striped table -->
 
               <!-- Footer -->
               <div class="footer text-muted">
